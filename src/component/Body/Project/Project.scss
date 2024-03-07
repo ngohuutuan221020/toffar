@@ -1,0 +1,72 @@
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 1rem;
+}
+@mixin titleText($titleSize) {
+  font-size: $titleSize;
+  color: var(--black);
+  text-transform: capitalize;
+}
+@mixin graphText($graphSize) {
+  font-size: $graphSize;
+  color: var(--light-color);
+  line-height: 1.5;
+}
+@mixin iconsBox($val) {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  background: var(--light-bg);
+  color: var(--black);
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background: var(--black);
+    color: var(--white);
+  }
+}
+.project {
+  .heading {
+    @include titleText(3rem);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 1rem solid var(--yellow);
+  }
+  .box-container {
+    // display: flex;
+    // flex-direction: column;
+    @include grid(20rem);
+    .box {
+      display: flex;
+      flex-direction: column;
+      cursor: initial;
+      .image {
+        flex-shrink: 0;
+        overflow: hidden;
+        height: 15rem;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        justify-content: space-between;
+        h3 {
+          @include titleText(1rem);
+          text-transform: uppercase;
+        }
+        p {
+          @include graphText(1rem);
+        }
+      }
+    }
+  }
+}

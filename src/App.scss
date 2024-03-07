@@ -1,0 +1,85 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+#root {
+  --yellow: #f5bf23;
+  --black: #111;
+  --white: #fff;
+  --light-color: #666;
+  --light-bg: #eee;
+  --box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  --border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+  transition: all 0.2s linear;
+}
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 2rem;
+}
+@mixin titleText($titleSize) {
+  font-size: $titleSize;
+  color: var(--black);
+  text-transform: capitalize;
+}
+@mixin graphText($graphSize) {
+  font-size: $graphSize;
+  color: var(--light-color);
+  line-height: 1.5;
+}
+@mixin iconsBox($val) {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  background: var(--light-bg);
+  color: var(--black);
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background: var(--black);
+    color: var(--white);
+  }
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+  // font-size: 65%;
+
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  ::-webkit-scrollbar-track {
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #f5bf23;
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+  }
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 95%;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 90%;
+  }
+}
