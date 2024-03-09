@@ -44,11 +44,11 @@
       background: var(--white);
       box-shadow: var(--box-shadow);
       border: var(--border);
-      border-radius: 15px;
+      border-radius: 10px;
       cursor: pointer;
       img {
         height: 10rem;
-        border-radius: 5px;
+        border-radius: 10px;
         &:hover {
           transform: translateY(-1rem);
         }
@@ -70,10 +70,7 @@
       @include grid(15rem);
       .box {
         img {
-          height: 10rem;
-          border-radius: 5px;
           &:hover {
-            transform: translateY(-1rem);
           }
         }
         h3 {
