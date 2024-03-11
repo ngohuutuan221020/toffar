@@ -17,10 +17,18 @@ function Contact() {
           <div className="box-ct content">
             <h3 style={{fontWeight: "bold"}}>Công ty TNHH Toffar</h3>
             <h3 style={{fontStyle: "italic", fontWeight: "normal"}}>TOFFAR Steel Facilities</h3>
-            <p>Địa chỉ: 194-6 Nguyễn Trọng Tuyển, Phường 8, Phú Nhuận, Thành phố Hồ Chí Minh, Việt Nam</p>
-            <p>Address: No. 194-6 Nguyen Trong Tuyen Street, Ward 8th, Phu Nhuan distric, Ho Chi Minh City, VietNam</p>
-            <p>Điện thoại / Phone No: (028) 3 997 6667 | 0903349668</p>
-            <p>Email: info@toffar.com | ndt@toffar.com</p>
+            <p>
+              <i>Địa chỉ: </i>194-6 Nguyễn Trọng Tuyển, Phường 8, Phú Nhuận, Thành phố Hồ Chí Minh, Việt Nam
+            </p>
+            <p>
+              <i>Address: </i>No. 194-6 Nguyen Trong Tuyen Street, Ward 8th, Phu Nhuan distric, Ho Chi Minh City, VietNam
+            </p>
+            <p>
+              <i>Điện thoại / Phone No: </i>(028) 3 997 6667 | 0903349668
+            </p>
+            <p>
+              <i>Email: </i>info@toffar.com | ndt@toffar.com
+            </p>
           </div>
         </div>
       </section>

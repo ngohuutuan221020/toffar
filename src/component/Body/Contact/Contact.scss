@@ -41,18 +41,21 @@
     flex-wrap: wrap;
     gap: 3rem;
     .box-ct {
-      flex: 1 1 41rem;
+      flex: 1 1 21rem;
     }
     .map {
       width: 100%;
     }
     .content {
       h3 {
-        @include titleText(2rem);
+        @include titleText(1.5rem);
         text-transform: uppercase !important;
       }
       p {
-        @include graphText(1.5rem);
+        @include graphText(1rem);
+        i {
+          font-weight: bold;
+        }
       }
     }
   }

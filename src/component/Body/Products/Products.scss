@@ -67,14 +67,16 @@
     .heading {
     }
     .box-container {
-      @include grid(15rem);
+      @include grid(11rem);
       .box {
+        padding: 1.5rem 0;
         img {
+          height: 5rem;
           &:hover {
           }
         }
         h3 {
-          @include titleText(1.5rem);
+          @include titleText(1rem);
           padding-top: 1rem;
         }
       }

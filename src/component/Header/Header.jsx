@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import "./Header.scss";
 import Logo from "../../assets/Logo_toffar.png";
-
+import {useEffect} from "react";
 function Header() {
   window.onscroll = () => {
     document.querySelector(".header .navBar").classList.remove("active");
@@ -19,12 +19,23 @@ function Header() {
   const handleClickCloseContact = () => {
     document.querySelector(".contactInfo").classList.remove("active");
   };
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  });
+
+  const isSticky = (e) => {
+    const header = document.querySelector(".header-section");
+    const scrollTop = window.scrollY;
+    scrollTop >= 250 ? header.classList.add("is-sticky") : header.classList.remove("is-sticky");
+  };
   return (
     <>
-      <div className="header">
+      <div className="header header-section">
         <a href="#" className="logo">
           <img src={Logo} alt="" />
-          {/* <span>Toffar</span> */}
         </a>
         <nav className="navBar">
           <a href="#home">Trang chủ</a>
@@ -37,8 +48,6 @@ function Header() {
         <div className="icons" style={{display: "flex"}}>
           <div id="menu-btn" className="bi bi-list" onClick={handleClickMenu}></div>
           <div id="info-btn" className="bi bi-info-circle-fill" onClick={handleClickContact}></div>
-          {/* <div id='search-btn' className="bi bi-search" onClick={handleClickSearch}></div> */}
-          {/* <div id='login-btn' className="bi bi-person-fill"></div> */}
         </div>
         <form action="" className="search-form">
           <input type="search" name="" id="search-box" placeholder="Tìm kiếm ..." />

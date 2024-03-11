@@ -6,51 +6,55 @@ function Footer() {
   return (
     <>
       <footer className="text-center text-lg-start text-white mt-5" style={{backgroundColor: "#45526e"}}>
-        <div className="p-4 pb-0">
-          <section className="footer" style={{padding: "1rem 5%"}}>
+        <div className="pb-0">
+          <section className="footer" style={{padding: "2rem 5%"}}>
             <div className="row">
-              <div className="col-md-4 col-lg-4 col-xl-4 mt-3">
-                <img src={logo} alt="" style={{width: "20rem"}} />
-                <h1 className="text-uppercase mt-4 font-weight-bold">CÔNG TY TNHH TOFFAR</h1>
-                <h1 className="text-uppercase mb-4" style={{fontStyle: "italic", fontWeight: "normal"}}>
+              <div
+                className="col-md-4 col-lg-4 col-xl-4 "
+                style={{display: "flex", textAlign: "center", flexDirection: "column", justifyContent: "center", alignItems: "center"}}
+              >
+                <img src={logo} />
+                <h3 className="text-uppercase mt-4 font-weight-bold">CÔNG TY TNHH TOFFAR</h3>
+                <h3 className="text-uppercase mb-4" style={{fontStyle: "italic", fontWeight: "normal"}}>
                   TOFFAR STEEL FACILITIES
-                </h1>
-                <p></p>
+                </h3>
               </div>
-
               <hr className="w-100 clearfix d-md-none" />
-
-              <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 className="text-uppercase mb-4 font-weight-bold">Infomation</h6>
+              <div className="col-md-4 col-lg-4 col-xl-4 links">
+                <h6 className="text-uppercase font-weight-bold">Quick Links</h6>
                 <p>
+                  <i className="fa-solid fa-chevron-right mx-2"></i>
                   <a className="text-white">Lĩnh vực hoạt động</a>
                 </p>
                 <p>
+                  <i className="fa-solid fa-chevron-right mx-2"></i>
                   <a className="text-white"> Quy trình sản xuất</a>
                 </p>
                 <p>
+                  <i className="fa-solid fa-chevron-right mx-2"></i>
                   <a className="text-white">Quy trình lắp dựng</a>
                 </p>
                 <p>
+                  <i className="fa-solid fa-chevron-right mx-2"></i>
                   <a className="text-white" href="#products">
                     Trang thiết bị sản xuất
                   </a>
                 </p>
                 <p>
+                  <i className="fa-solid fa-chevron-right mx-2"></i>
                   <a className="text-white" href="#about">
                     Nguồn nhân lực
                   </a>
                 </p>
                 <p>
+                  <i className="fa-solid fa-chevron-right mx-2"></i>
                   <a className="text-white" href="#project">
                     Dự án tiêu biểu
                   </a>
                 </p>
               </div>
-
               <hr className="w-100 clearfix d-md-none" />
-
-              <div className="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
+              <div className="col-md-4 col-lg-4 col-xl-4  ">
                 <h6 className="text-uppercase mb-4 font-weight-bold">Liên hệ</h6>
                 <p>
                   <i className="fas fa-home  m-2"></i> Địa chỉ: 194-6 Nguyễn Trọng Tuyển, Phường 8, Phú Nhuận, Thành phố Hồ Chí Minh, Việt

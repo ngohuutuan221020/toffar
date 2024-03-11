@@ -37,14 +37,28 @@
   }
   .image {
     height: 150px;
+    width: 200px;
     display: flex;
     justify-content: center;
     cursor: pointer;
     img {
-      height: auto;
       width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
+  // .image {
+  //   height: 150px;
+  //   display: flex;
+  //   justify-content: center;
+  //   cursor: pointer;
+  //   img {
+  //     height: auto;
+  //     width: 100%;
+  //   }
+  // }
 }
 @media (max-width: 1024px) {
 }
@@ -52,14 +66,21 @@
 }
 @media (max-width: 425px) {
   .partners {
+    // .image {
+    //   height: 50px !important;
+    //   display: flex;
+    //   justify-content: center;
+    //   cursor: pointer;
+    //   img {
+    //     height: auto;
+    //     width: 100%;
+    //   }
+    // }
     .image {
-      height: 50px !important;
-      display: flex;
-      justify-content: center;
-      cursor: pointer;
+      height: 50px;
+      width: 100px;
+
       img {
-        height: auto;
-        width: 100%;
       }
     }
   }

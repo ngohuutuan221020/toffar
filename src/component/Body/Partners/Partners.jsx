@@ -59,7 +59,7 @@ function Partners() {
     <>
       <section className="partners" id="partners">
         <h1 className="heading">Đối tác và khách hàng</h1>
-        <Swiper slidesPerView={4} freeMode={true} spaceBetween={30} modules={[FreeMode]} className="mySwiper">
+        <Swiper slidesPerView={3} freeMode={true} spaceBetween={10} modules={[FreeMode]} className="mySwiper">
           {arrPartners &&
             arrPartners.length > 0 &&
             arrPartners.map((item, index) => {
@@ -67,7 +67,7 @@ function Partners() {
                 <>
                   <SwiperSlide>
                     <div className="image">
-                      <img src={item.image} alt="" />
+                      <img src={item.image} />
                     </div>
                   </SwiperSlide>
                 </>

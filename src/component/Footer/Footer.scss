@@ -1,1 +1,40 @@
-// @import "~mdb-ui-kit/css/mdb.min.css";
+.footer {
+  .row {
+    img {
+      width: 70%;
+    }
+  }
+}
+.links {
+  a.text-white,
+  p {
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+      color: var(--yellow) !important;
+    }
+  }
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+  .footer {
+    .row {
+      img {
+        width: 70%;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .links {
+    p {
+      i {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+}
