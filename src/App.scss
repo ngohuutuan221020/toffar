@@ -8,6 +8,7 @@
   --light-bg: #eee;
   --box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   --border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%, transparent 66.66% 75%);
 }
 
 * {
@@ -70,6 +71,19 @@ html {
   ::-webkit-scrollbar-thumb:hover {
     background: #b30000;
   }
+}
+.preload {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--yellow);
+  z-index: 10000;
+  display: grid;
+  place-content: center;
+  justify-content: center;
+  transition: 500ms ease;
 }
 @media (max-width: 1024px) {
 }
