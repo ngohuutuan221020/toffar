@@ -21,7 +21,7 @@ function App() {
   // }, []);
   return (
     <>
-      {/* <PreLoader /> */}
+      <PreLoader />
       <div className="App">
         <Header />
         <Body />
