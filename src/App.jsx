@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import {Cube} from "react-preloaders";
 // import {useEffect, useState} from "react";
 import PreLoader from "./component/PreLoader/PreLoader";
+
 function App() {
   // const [isLoading, setIsLoading] = useState(true);
 
@@ -20,7 +21,7 @@ function App() {
   // }, []);
   return (
     <>
-      <PreLoader />
+      {/* <PreLoader /> */}
       <div className="App">
         <Header />
         <Body />

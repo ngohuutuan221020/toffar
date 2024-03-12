@@ -2,7 +2,8 @@ import "./About.scss";
 import Products from "../Products/Products";
 
 import img from "../../../assets/about.png";
-
+import Fields from "../Fields/Fields";
+import Process from "../Process/Process";
 function About() {
   return (
     <>
@@ -47,6 +48,8 @@ function About() {
           </div>
         </div>
       </section>
+      <Fields />
+      <Process />
       <Products />
     </>
   );

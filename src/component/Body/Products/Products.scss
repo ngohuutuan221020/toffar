@@ -37,18 +37,20 @@
     border-left: 1rem solid var(--yellow);
   }
   .box-container {
-    @include grid(20rem);
+    @include grid(16rem);
     .box {
       text-align: center;
-      padding: 2rem 0;
+      padding: 1rem;
       background: var(--white);
       box-shadow: var(--box-shadow);
       border: var(--border);
       border-radius: 10px;
       cursor: pointer;
       img {
-        height: 10rem;
-        border-radius: 10px;
+        // padding: 0 1rem;
+        height: auto;
+        width: 100%;
+        border-radius: 10px !important;
         &:hover {
           transform: translateY(-1rem);
         }
@@ -61,17 +63,40 @@
   }
 }
 @media (max-width: 1024px) {
+  .products {
+    .heading {
+    }
+    .box-container {
+      @include grid(16rem);
+      .box {
+        // padding: 1.5rem;
+        img {
+          // padding: 0 1rem;
+          height: auto;
+          width: 100%;
+          &:hover {
+          }
+        }
+        h3 {
+          @include titleText(1rem);
+          padding-top: 1rem;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 768px) {
   .products {
     .heading {
     }
     .box-container {
-      @include grid(11rem);
+      @include grid(12rem);
       .box {
-        padding: 1.5rem 0;
+        // padding: 1.5rem 0;
         img {
-          height: 5rem;
+          // padding: 0 1rem;
+          height: auto;
+          width: 100%;
           &:hover {
           }
         }
@@ -84,4 +109,46 @@
   }
 }
 @media (max-width: 425px) {
+  .products {
+    .heading {
+    }
+    .box-container {
+      @include grid(11rem);
+      .box {
+        // padding: 0.5rem 0;
+        img {
+          // padding: 0 1rem;
+          height: auto;
+          width: 100%;
+          &:hover {
+          }
+        }
+        h3 {
+          @include titleText(0.8rem);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .products {
+    .heading {
+    }
+    .box-container {
+      @include grid(9rem);
+      .box {
+        // padding: 0.5rem 0;
+        img {
+          // padding: 0 1rem;
+          height: auto;
+          width: 100%;
+          &:hover {
+          }
+        }
+        h3 {
+          @include titleText(0.8rem);
+        }
+      }
+    }
+  }
 }

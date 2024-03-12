@@ -54,19 +54,24 @@
           left: 0;
           height: 100%;
           width: 100%;
-          background: linear-gradient(90deg, var(--white), transparent);
+          background: linear-gradient(180deg, rgba(40, 40, 40, 0.23), transparent);
+          // background: linear-gradient(90deg, #a1a1a17d, transparent);
         }
         .content {
           width: 60rem;
           position: relative;
           h3 {
             @include titleText(4rem);
+            color: white;
             text-transform: uppercase;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
           }
           p {
-            @include graphText(1rem);
-
-            padding: 1rem 0;
+            @include graphText(2rem);
+            color: white;
+            margin-bottom: 0 !important;
+            font-weight: 600;
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
           }
         }
       }
@@ -116,4 +121,35 @@
   }
 }
 @media (max-width: 425px) {
+  .home {
+    .home-slider {
+      .w {
+        .slide-1 {
+        }
+        .slide-2 {
+        }
+        .slide {
+          &::before {
+          }
+          .content {
+            h3 {
+            }
+            p {
+            }
+          }
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+          display: none;
+          &:hover {
+          }
+        }
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+        }
+        .swiper-button-prev {
+        }
+      }
+    }
+  }
 }

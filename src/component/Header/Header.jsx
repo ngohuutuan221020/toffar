@@ -45,14 +45,19 @@ function Header() {
           <a href="#contact">Liên hệ</a>
           <a href="#partners">Đối tác</a>
         </nav>
+        <span id="top_contact_number">
+          <a href="tel:(028) 3 997 6667" style={{color: "white"}} className="number-phone">
+            <i className="fa fa-phone"></i> (028) 3 997 6667
+          </a>
+        </span>
         <div className="icons" style={{display: "flex"}}>
           <div id="menu-btn" className="bi bi-list" onClick={handleClickMenu}></div>
           <div id="info-btn" className="bi bi-info-circle-fill" onClick={handleClickContact}></div>
         </div>
-        <form action="" className="search-form">
+        {/* <form action="" className="search-form">
           <input type="search" name="" id="search-box" placeholder="Tìm kiếm ..." />
           <label htmlFor="search-box" className="bi bi-search"></label>
-        </form>
+        </form> */}
       </div>
       <div className="contactInfo">
         <div id="close-contact-info" className="bi bi-x-circle" onClick={handleClickCloseContact}></div>

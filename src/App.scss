@@ -3,7 +3,8 @@
 #root {
   --yellow: #f5bf23;
   --black: #111;
-  --white: #fff;
+  --white: #ffffff;
+  --white-stick: #ffffffcc;
   --light-color: #666;
   --light-bg: #eee;
   --box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
@@ -18,6 +19,7 @@
   outline: none;
   border: none;
   text-decoration: none !important;
+
   transition: all 0.2s linear;
 }
 
@@ -72,19 +74,19 @@ html {
     background: #b30000;
   }
 }
-.preload {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--yellow);
-  z-index: 10000;
-  display: grid;
-  place-content: center;
-  justify-content: center;
-  transition: 500ms ease;
-}
+// .preload {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: var(--yellow);
+//   z-index: 10000;
+//   display: grid;
+//   place-content: center;
+//   justify-content: center;
+//   transition: 500ms ease;
+// }
 @media (max-width: 1024px) {
 }
 @media (max-width: 768px) {
@@ -92,7 +94,7 @@ html {
     font-size: 95%;
   }
   .heading {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
   }
 }
 @media (max-width: 425px) {
