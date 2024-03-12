@@ -24,15 +24,21 @@ function Footer() {
                 <h6 className="text-uppercase font-weight-bold">Quick Links</h6>
                 <p>
                   <i className="fa-solid fa-chevron-right mx-2"></i>
-                  <a className="text-white">Lĩnh vực hoạt động</a>
+                  <a className="text-white" href="#Fields">
+                    Lĩnh vực hoạt động
+                  </a>
                 </p>
                 <p>
                   <i className="fa-solid fa-chevron-right mx-2"></i>
-                  <a className="text-white"> Quy trình sản xuất</a>
+                  <a className="text-white" href="#Process">
+                    Quy trình sản xuất
+                  </a>
                 </p>
                 <p>
                   <i className="fa-solid fa-chevron-right mx-2"></i>
-                  <a className="text-white">Quy trình lắp dựng</a>
+                  <a className="text-white" href="#products">
+                    Quy trình lắp dựng
+                  </a>
                 </p>
                 <p>
                   <i className="fa-solid fa-chevron-right mx-2"></i>
