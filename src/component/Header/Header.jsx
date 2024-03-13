@@ -40,7 +40,7 @@ function Header() {
         <nav className="navBar">
           <a href="#home">Trang chủ</a>
           <a href="#about">Giới thiệu</a>
-          <a href="#service">Dịch vụ</a>
+          {/* <a href="#service">Dịch vụ</a> */}
           <a href="#project">Dự án</a>
           <a href="#contact">Liên hệ</a>
           <a href="#partners">Đối tác</a>

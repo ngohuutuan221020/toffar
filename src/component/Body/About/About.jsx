@@ -4,6 +4,7 @@ import Products from "../Products/Products";
 import img from "../../../assets/about.png";
 import Fields from "../Fields/Fields";
 import Process from "../Process/Process";
+import Installation from "../Installation/Installation";
 function About() {
   return (
     <>
@@ -50,6 +51,7 @@ function About() {
       </section>
       <Fields />
       <Process />
+      <Installation />
       <Products />
     </>
   );

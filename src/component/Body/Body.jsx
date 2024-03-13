@@ -12,8 +12,8 @@ function Body() {
       <About />
       <Contact />
       <Project />
-      <Service />
       <Partners />
+      {/* <Service /> */}
     </>
   );
 }

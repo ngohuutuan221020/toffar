@@ -1,0 +1,81 @@
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 1rem;
+}
+@mixin titleText($titleSize) {
+  font-size: $titleSize;
+  color: var(--black);
+  text-transform: capitalize;
+}
+@mixin graphText($graphSize) {
+  font-size: $graphSize;
+  color: var(--light-color);
+  line-height: 1.5;
+}
+@mixin iconsBox($val) {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  background: var(--light-bg);
+  color: var(--black);
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background: var(--black);
+    color: var(--white);
+  }
+}
+.Installation {
+  .heading {
+    @include titleText(3rem);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 1rem solid var(--yellow);
+  }
+  .installation-slider {
+    .w {
+      .installation-swiper {
+        transform: scale(0.8);
+        margin-bottom: 2rem;
+        &.swiper-slide-active {
+          transform: scale(1);
+          background: rgba(255, 204, 0, 0.459);
+          .installation-slide {
+            .installation-image {
+              img {
+              }
+            }
+            .installation-content {
+              display: block;
+            }
+          }
+        }
+        .installation-slide {
+          .installation-image {
+            height: 20rem;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .installation-content {
+            display: none;
+            background: linear-gradient(90deg, rgba(40, 40, 40, 0.692), transparent);
+            position: absolute;
+            align-items: center;
+            padding: 0.5rem;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            color: white;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
