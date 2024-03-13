@@ -265,4 +265,74 @@
   }
 }
 @media (max-width: 425px) {
+  a.number-phone {
+    display: none;
+  }
+  .contactInfo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: var(--white);
+    height: 100%;
+    text-align: center;
+    z-index: 1000;
+    padding: 0 1rem;
+    padding-top: 0.5rem;
+    animation: fadeIn 0.5s linear;
+    display: none;
+    &.active {
+      display: block;
+      box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+    }
+    .info {
+      gap: 0.8rem;
+      display: flex;
+      padding: 0.5rem 0;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      i {
+        @include iconsBox();
+      }
+      h3 {
+        @include titleText(1rem);
+        margin-bottom: unset !important;
+      }
+      p {
+        @include graphText(1rem);
+        margin-bottom: unset !important;
+      }
+    }
+    .info-building {
+      i {
+        @include iconsBox();
+      }
+      h3 {
+        @include titleText(1rem);
+      }
+      p {
+        @include graphText(1rem);
+      }
+    }
+    #close-contact-info {
+      display: flex;
+
+      background-color: white;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      /* top: 1rem; */
+      /* right: 1rem; */
+      cursor: pointer;
+      font-size: 2rem;
+      color: var(--black);
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+  }
 }

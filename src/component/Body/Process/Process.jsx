@@ -85,7 +85,7 @@ function Process() {
               slidesPerView={3}
               spaceBetween={30}
               breakpoints={{
-                375: {
+                300: {
                   slidesPerView: 1,
                   spaceBetween: 10,
                 },

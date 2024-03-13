@@ -47,6 +47,8 @@
           border-radius: 10px;
           height: 100%;
           width: 100%;
+          object-fit: cover;
+          object-position: center;
           &:hover {
             transform: scale(1.05);
           }
@@ -64,6 +66,8 @@
           height: 10rem;
           width: 100%;
           margin-bottom: 1rem;
+          object-fit: cover;
+          object-position: center;
           &:hover {
             transform: scale(1.05);
           }
@@ -95,6 +99,8 @@
           height: 10rem;
           width: 100%;
           margin-bottom: 1rem;
+          object-fit: cover;
+          object-position: center;
           &:hover {
             transform: scale(1.05);
           }
