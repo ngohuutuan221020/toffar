@@ -1,5 +1,6 @@
 import "./Footer.scss";
 import logo from "../../assets/Logo_toffar.png";
+import {FormattedMessage} from "react-intl";
 function Footer() {
   const d = new Date();
   let year = d.getFullYear();
@@ -24,47 +25,49 @@ function Footer() {
                 <h6 className="text-uppercase font-weight-bold">Quick Links</h6>
                 <p>
                   <i className="fa-solid fa-chevron-right mx-2"></i>
+                  <a className="text-white" href="#about">
+                    <FormattedMessage id="nguonLucNhanSu" />
+                  </a>
+                </p>
+                <p>
+                  <i className="fa-solid fa-chevron-right mx-2"></i>
                   <a className="text-white" href="#Fields">
-                    Lĩnh vực hoạt động
+                    <FormattedMessage id="linhVucHoatDong" />
                   </a>
                 </p>
                 <p>
                   <i className="fa-solid fa-chevron-right mx-2"></i>
                   <a className="text-white" href="#Process">
-                    Quy trình sản xuất
+                    <FormattedMessage id="quyTrinhSanXuat" />
                   </a>
                 </p>
                 <p>
                   <i className="fa-solid fa-chevron-right mx-2"></i>
                   <a className="text-white" href="#products">
-                    Quy trình lắp dựng
+                    <FormattedMessage id="quyTrinhLapDung" />
                   </a>
                 </p>
                 <p>
                   <i className="fa-solid fa-chevron-right mx-2"></i>
                   <a className="text-white" href="#products">
-                    Trang thiết bị sản xuất
+                    <FormattedMessage id="trangThietBiSanXuat" />
                   </a>
                 </p>
-                <p>
-                  <i className="fa-solid fa-chevron-right mx-2"></i>
-                  <a className="text-white" href="#about">
-                    Nguồn nhân lực
-                  </a>
-                </p>
+
                 <p>
                   <i className="fa-solid fa-chevron-right mx-2"></i>
                   <a className="text-white" href="#project">
-                    Dự án tiêu biểu
+                    <FormattedMessage id="duAnTieuBieu" />
                   </a>
                 </p>
               </div>
               <hr className="w-100 clearfix d-md-none" />
               <div className="col-md-4 col-lg-4 col-xl-4  ">
-                <h6 className="text-uppercase mb-4 font-weight-bold">Liên hệ</h6>
+                <h6 className="text-uppercase mb-4 font-weight-bold">
+                  <FormattedMessage id="header.lienHe" />
+                </h6>
                 <p>
-                  <i className="fas fa-home  m-2"></i> Địa chỉ: 194-6 Nguyễn Trọng Tuyển, Phường 8, Phú Nhuận, Thành phố Hồ Chí Minh, Việt
-                  Nam
+                  <i className="fas fa-home  m-2"></i> <FormattedMessage id="diaChi" />
                 </p>
                 <p>
                   <i className="fas fa-envelope m-2"></i> info@toffar.com | ndt@toffar.com

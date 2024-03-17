@@ -1,9 +1,12 @@
 import "./Contact.scss";
+import {FormattedMessage} from "react-intl";
 function Contact() {
   return (
     <>
       <section id="contact" className="contact">
-        <h1 className="heading">Liên hệ</h1>
+        <h1 className="heading">
+          <FormattedMessage id="header.lienHe" />
+        </h1>
         <div className="row">
           <iframe
             className="box-ct map"

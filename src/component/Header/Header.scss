@@ -52,7 +52,6 @@
   justify-content: space-between;
   z-index: 100;
   position: fixed;
-  // background: var(--white);
   background: transparent;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   border: 0;
@@ -65,7 +64,7 @@
     // padding: 0;
     box-sizing: border-box;
     width: 100%;
-    height: 96px;
+    // height: 96px;
     background: #fff;
     background: rgb(256, 256, 256, 0.95);
     background: rgba(256, 256, 256, 0.95);
@@ -79,6 +78,18 @@
     }
     a.number-phone {
       color: black !important;
+    }
+    .bi-translate {
+      color: black !important;
+    }
+    select {
+      @include titleText(1rem);
+      color: rgb(0, 0, 0) !important;
+      font-weight: 600;
+      background: transparent !important;
+      option {
+        color: black;
+      }
     }
   }
   img {
@@ -144,8 +155,19 @@
       }
     }
   }
+  .bi-translate {
+    color: rgb(255, 255, 255) !important;
+  }
+  select {
+    @include titleText(1rem);
+    color: white !important;
+    font-weight: 600;
+    background: transparent !important;
+    option {
+      color: black;
+    }
+  }
 }
-
 .contactInfo {
   position: fixed;
   top: 0;
@@ -214,8 +236,14 @@
   }
 }
 @media (max-width: 1024px) {
+  a.number-phone {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
+  a.number-phone {
+    display: block;
+  }
   .header {
     #menu-btn {
       display: inline-block;
@@ -338,6 +366,11 @@
       &:hover {
         transform: rotate(90deg);
       }
+    }
+  }
+  .header {
+    img {
+      height: 30px !important;
     }
   }
 }

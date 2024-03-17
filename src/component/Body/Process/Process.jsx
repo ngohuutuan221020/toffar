@@ -1,4 +1,5 @@
 import "./Process.scss";
+import {FormattedMessage} from "react-intl";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Grid, Scrollbar, Navigation, Pagination, A11y, EffectFade, FreeMode} from "swiper/modules";
 import "swiper/css";
@@ -30,47 +31,47 @@ import num9 from "../../../assets/Number/number-9.png";
 function Process() {
   let arrProducts = [
     {
-      name: "Nguyên liệu",
+      name: <FormattedMessage id="nguyenLieu" />,
       img: img1,
       num: num1,
     },
     {
-      name: "Cắt thép",
+      name: <FormattedMessage id="catThep" />,
       img: img2,
       num: num2,
     },
     {
-      name: "Ép định hình cầu kiện",
+      name: <FormattedMessage id="epDinhHinh" />,
       img: img3,
       num: num3,
     },
     {
-      name: "Ráp hoàn thiện",
+      name: <FormattedMessage id="rapHoanThien" />,
       img: img4,
       num: num4,
     },
     {
-      name: "Nấn chỉnh",
+      name: <FormattedMessage id="nanChinh" />,
       img: img5,
       num: num5,
     },
     {
-      name: "Hàn hoàn thiện",
+      name: <FormattedMessage id="hanHoanThien" />,
       img: img6,
       num: num6,
     },
     {
-      name: "Làm sạch",
+      name: <FormattedMessage id="lamSach" />,
       img: img7,
       num: num7,
     },
     {
-      name: "Phun sơn",
+      name: <FormattedMessage id="phunSon" />,
       img: img8,
       num: num8,
     },
     {
-      name: "Kiểm tra thành phẩm",
+      name: <FormattedMessage id="kiemTra" />,
       img: img9,
       num: num9,
     },
@@ -78,7 +79,9 @@ function Process() {
   return (
     <>
       <section className="Process" id="Process">
-        <h1 className="heading">Quy trình sản xuất</h1>
+        <h1 className="heading">
+          <FormattedMessage id="quyTrinhSanXuat" />
+        </h1>
         <div className="process-slider">
           <div className="w">
             <Swiper

@@ -1,4 +1,5 @@
 import "./Products.scss";
+import {FormattedMessage} from "react-intl";
 import img1 from "../../../assets/products/cau-truc.png";
 import img2 from "../../../assets/products/may-ban-bi.png";
 import img3 from "../../../assets/products/may-cat-co-nho.png";
@@ -14,58 +15,60 @@ import img12 from "../../../assets/products/may-nan-dam.png";
 function Products() {
   let arrProducts = [
     {
-      name: "Máy hàn kèo tự động",
+      name: <FormattedMessage id="product.mayHanKeo" />,
       img: img9,
     },
     {
-      name: "Máy cắt CNC Plasma",
+      name: <FormattedMessage id="product.mayCatCNC" />,
       img: img4,
     },
     {
-      name: "Máy nắn bản mã",
+      name: <FormattedMessage id="product.mayNanBanMa" />,
       img: img11,
     },
     {
-      name: "Máy nắn dầm",
+      name: <FormattedMessage id="product.mayNanDam" />,
       img: img12,
     },
     {
-      name: "Máy hàn ngang",
+      name: <FormattedMessage id="product.mayHanNgang" />,
       img: img10,
     },
     {
-      name: "Máy đột CNC",
+      name: <FormattedMessage id="product.mayDotCNC" />,
       img: img7,
     },
     {
-      name: "Máy bắn bi",
+      name: <FormattedMessage id="product.mayBanBi" />,
       img: img2,
     },
     {
-      name: "Máy chặt thép",
+      name: <FormattedMessage id="product.mayChatThep" />,
       img: img6,
     },
     {
-      name: "Máy chấn thép",
+      name: <FormattedMessage id="product.mayChanThep" />,
       img: img5,
     },
     {
-      name: "Cầu trục 5 tấn",
+      name: <FormattedMessage id="product.cauTruc" />,
       img: img1,
     },
     {
-      name: "Máy hàn C02",
+      name: <FormattedMessage id="product.mayHanC02" />,
       img: img8,
     },
     {
-      name: "Máy cắt cỡ nhỏ",
+      name: <FormattedMessage id="product.mayCatCoNho" />,
       img: img3,
     },
   ];
   return (
     <>
       <section className="products" id="products">
-        <h1 className="heading">Trang thiết bị sản xuất</h1>
+        <h1 className="heading">
+          <FormattedMessage id="trangThietBiSanXuat" />
+        </h1>
         <div className="box-container">
           {arrProducts &&
             arrProducts.length > 0 &&

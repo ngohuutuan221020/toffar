@@ -1,51 +1,64 @@
 import "./About.scss";
 import Products from "../Products/Products";
-
 import img from "../../../assets/about.png";
 import Fields from "../Fields/Fields";
 import Process from "../Process/Process";
 import Installation from "../Installation/Installation";
+import {FormattedMessage} from "react-intl";
+
 function About() {
   return (
     <>
       <section className="about" id="about">
-        <h1 className="heading">About</h1>
+        <h1 className="heading">
+          <FormattedMessage id="header.gioiThieu" />
+        </h1>
         <div className="row">
           <div className="box image">
             <img src={img} />
           </div>
           <div className="box content">
-            <h3>Nguồn lực nhân sự</h3>
+            <h3>
+              <FormattedMessage id="nguonLucNhanSu" />
+            </h3>
             <p>
-              Nguồn nhân lực là động lực tăng trưởng bền vững của doanh nghiệp, phát triển một đội ngũ nhân sự có chuyên môn cao, tâm huyết
-              với nghề để cùng xây dựng giá trị bền vững theo thời gian.
+              <FormattedMessage id="hrDiv1" />
             </p>
             <p>
-              Sự kết hợp và phát triển giữa mô hình công ty hiện đại tân tiến với một Ban lãnh đạo trình độ cao, giàu kinh nghiệm cùng với
-              đội ngũ nhân viên năng động, luôn nghiệt huyết và sáng tạo, đó chính là niềm tự hào và lợi thế cạnh tranh của chúng tôi.
+              <FormattedMessage id="hrDiv2" />
             </p>
           </div>
         </div>
         <div className="box-container">
           <div className="box">
             <h3>500+</h3>
-            <p>Tổng nhân sự</p>
+            <p>
+              <FormattedMessage id="tongNhanSu" />
+            </p>
           </div>
           <div className="box">
             <h3>40</h3>
-            <p>Kỹ sư văn phòng</p>
+            <p>
+              <FormattedMessage id="kySuVanPhong" />
+            </p>
           </div>
           <div className="box">
             <h3>280</h3>
-            <p>Thi công lắp dựng</p>
+            <p>
+              <FormattedMessage id="thiCongLapDung" />
+            </p>
           </div>
           <div className="box">
             <h3>170</h3>
-            <p>Bộ phận sản xuất</p>
+            <p>
+              <FormattedMessage id="boPhanSanXuat" />
+            </p>
           </div>
           <div className="box">
             <h3>10</h3>
-            <p>Bộ phận cung ứng, đặt hàng</p>
+            <p>
+              <FormattedMessage id="boPhanCungUng" />
+            </p>
           </div>
         </div>
       </section>

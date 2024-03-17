@@ -1,4 +1,5 @@
 import "./Installation.scss";
+import {FormattedMessage} from "react-intl";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation, Pagination, A11y, EffectFade} from "swiper/modules";
 import "swiper/css";
@@ -13,26 +14,28 @@ import img4 from "../../../assets/Installation/khungmaicheo.jpg";
 function Installation() {
   let arrProducts = [
     {
-      name: "1. Vận chuyển các cấu kiện thép bằng xe tải chuyên dụng đến vị trí tập kết tại công trình",
+      name: <FormattedMessage id="install_1" />,
       image: img1,
     },
     {
-      name: "2. Lắp dựng cột",
+      name: <FormattedMessage id="install_2" />,
       image: img2,
     },
     {
-      name: "3. Lắp dựng vách và giằng các cột lại với nhau",
+      name: <FormattedMessage id="install_3" />,
       image: img3,
     },
     {
-      name: "4. Lắp dựng khung kèo mái",
+      name: <FormattedMessage id="install_4" />,
       image: img4,
     },
   ];
   return (
     <>
       <section className="Installation" id="Installation">
-        <h1 className="heading">Quy trình lắp dựng</h1>
+        <h1 className="heading">
+          <FormattedMessage id="quyTrinhLapDung" />
+        </h1>
         <div className="installation-slider">
           <div className="w">
             <Swiper

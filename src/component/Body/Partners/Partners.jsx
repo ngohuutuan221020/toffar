@@ -1,4 +1,5 @@
 import "./Partners.scss";
+import {FormattedMessage} from "react-intl";
 import React from "react";
 
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -39,18 +40,18 @@ import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 function Partners() {
   let arrPartners = [
-    {image: img10},
-    {image: img11},
-    {image: img12},
     {image: img13},
     {image: img14},
     {image: img15},
+    {image: img11},
     {image: img1},
     {image: img2},
     {image: img3},
+    {image: img10},
     {image: img4},
     {image: img5},
     {image: img6},
+    {image: img12},
     {image: img7},
     {image: img8},
     {image: img9},
@@ -58,7 +59,9 @@ function Partners() {
   return (
     <>
       <section className="partners" id="partners">
-        <h1 className="heading">Đối tác và khách hàng</h1>
+        <h1 className="heading">
+          <FormattedMessage id="doiTac" />
+        </h1>
         <Swiper slidesPerView={3} freeMode={true} spaceBetween={10} modules={[FreeMode]} className="mySwiper">
           {arrPartners &&
             arrPartners.length > 0 &&

@@ -1,8 +1,12 @@
 /* eslint-disable no-unused-vars */
 import "./Header.scss";
 import Logo from "../../assets/Logo_toffar.png";
-import {useEffect} from "react";
+import {useContext, useEffect} from "react";
+import {FormattedMessage} from "react-intl";
+import {Context} from "../Translate/translate";
+
 function Header() {
+  const context = useContext(Context);
   window.onscroll = () => {
     document.querySelector(".header .navBar").classList.remove("active");
     // document.querySelector('.header .search-form').classList.remove('active');
@@ -38,18 +42,38 @@ function Header() {
           <img src={Logo} alt="" />
         </a>
         <nav className="navBar">
-          <a href="#home">Trang chủ</a>
-          <a href="#about">Giới thiệu</a>
-          {/* <a href="#service">Dịch vụ</a> */}
-          <a href="#project">Dự án</a>
-          <a href="#contact">Liên hệ</a>
-          <a href="#partners">Đối tác</a>
+          <a href="#home">
+            <FormattedMessage id="header.trangChu" />
+          </a>
+          <a href="#about">
+            <FormattedMessage id="header.gioiThieu" />
+          </a>
+          <a href="#project">
+            <FormattedMessage id="header.duAn" />
+          </a>
+          <a href="#contact">
+            <FormattedMessage id="header.lienHe" />
+          </a>
+          <a href="#partners">
+            <FormattedMessage id="header.doiTac" />
+          </a>
         </nav>
         <span id="top_contact_number">
           <a href="tel:(028) 3 997 6667" style={{color: "white"}} className="number-phone">
             <i className="fa fa-phone"></i> (028) 3 997 6667
           </a>
         </span>
+        <div className="languages" style={{display: "flex", flexDirection: "row"}}>
+          <i className="bi bi-translate"></i>
+          <select value={context.locale} onChange={context.selectLanguage}>
+            <option value="vi">
+              <a href="">Tiếng Việt</a>
+            </option>
+            <option value="en">
+              <a href="">English</a>
+            </option>
+          </select>{" "}
+        </div>
         <div className="icons" style={{display: "flex"}}>
           <div id="menu-btn" className="bi bi-list" onClick={handleClickMenu}></div>
           <div id="info-btn" className="bi bi-info-circle-fill" onClick={handleClickContact}></div>

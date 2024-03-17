@@ -1,4 +1,6 @@
 import "./Project.scss";
+import {FormattedMessage} from "react-intl";
+
 import arrayProject from "../Data/data";
 import LightGallery from "lightgallery/react";
 
@@ -16,17 +18,15 @@ import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 
 function Project() {
-  // const [isOpen, setIsOpen] = useState(false);
-  // function toggle() {
-  //     setIsOpen((isOpen) => !isOpen);
-  // }
   const onInit = () => {
     console.log("lightGallery has been initialized");
   };
   return (
     <>
       <section className="project" id="project">
-        <h1 className="heading">Dự Án Tiêu Biểu</h1>
+        <h1 className="heading">
+          <FormattedMessage id="duAnTieuBieu" />
+        </h1>
 
         <LightGallery onInit={onInit} speed={500} plugins={[lgThumbnail, lgZoom]} elementClassNames="box-container">
           {arrayProject &&
@@ -41,15 +41,21 @@ function Project() {
                     <div className="content">
                       <h3>{item.tenDuAn}</h3>
                       <p>
-                        <span>Địa điểm: </span>
+                        <span>
+                          <FormattedMessage id="diaDiem" />:{" "}
+                        </span>
                         {item.diaChi}
                       </p>
                       <p>
-                        <span>Chủ đầu tư: </span>
+                        <span>
+                          <FormattedMessage id="chuDauTu" />:{" "}
+                        </span>
                         {item.chuDauTu}
                       </p>
                       <p>
-                        <span>Quy Mô: </span>
+                        <span>
+                          <FormattedMessage id="quyMo" />:{" "}
+                        </span>
                         {item.quyMo}
                       </p>
                     </div>
