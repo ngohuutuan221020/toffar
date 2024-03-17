@@ -25,8 +25,8 @@ function Home() {
               <SwiperSlide>
                 <section className="slide slide-2">
                   <div className="content">
-                    <p>We Are</p>
-                    <h3>CONSTRUCTOR</h3>
+                    <h3 style={{letterSpacing: "2.5rem", WebkitTextStroke: ".3rem #54658f"}}>TOFFAR</h3>
+                    <p>TOFFAR STEEL FACILITIES</p>
                     {/* <a href="#about" className="btn btn-secondary">
                       Get Started
                     </a> */}
